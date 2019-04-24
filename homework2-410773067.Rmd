@@ -208,7 +208,7 @@ transcriptPartialData
 
 ```{r ans34}
 a1 <- c(transcriptData[["學號"]])
-transcriptPartialDataEcon <- c(logicFromEcon*a1)
+transcriptPartialDataEcon <- list("學號"=c(transcriptData[["學號"]][c(logicFromEcon)]),"學分數"=c(transcriptData[["學分數"]][c(logicFromEcon)]),"必選修類別（必∕選∕通）"=c(transcriptData[["必選修類別（必∕選∕通）"]][c(logicFromEcon)]))
 transcriptPartialDataEcon
 ```
 
